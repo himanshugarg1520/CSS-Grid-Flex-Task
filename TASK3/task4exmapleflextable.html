@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        body{
+            display: flex;
+            margin: 0;
+            background-color: aliceblue;
+            height: 100vh;
+            justify-content: center;
+        }
+
+        .flex-container{
+            display: flex;
+            flex-direction:column;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .header,
+        .navigation{
+            border: 2px solid chocolate;
+            border-radius: 3px;
+            margin: 5px;
+        }
+
+        
+        .header{
+            flex: 0 0 40px
+        }
+        .navigation{
+            flex: 0 0 40px;
+        }
+
+        .main-container{
+            display: flex;
+            flex: 1;
+            margin: 5px;
+        }
+
+        .sidebar{
+            flex: 0 0 200px;
+            border: 2px solid chocolate;
+            border-radius: 3px;
+        }
+        
+        .main{
+            flex:1;
+            border: 2px solid chocolate;
+            border-radius: 3px; 
+            margin-left: 5px;
+        }
+
+        .right-container{
+            display: flex;
+            flex: 1;
+            margin: 5px;
+        }
+        .ads{
+            flex: 0 0 200px;
+            border: 2px solid chocolate;
+            border-radius: 3px;
+            height: 40px;
+        }
+        .footer{
+            flex: 1;
+            border: 2px solid chocolate;
+            border-radius: 3px;
+            margin-left: 5px;
+            height: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <header class="header">Header</header>
+        <nav class="navigation">Navigation</nav>
+        <div class="main-container">
+            <aside class="sidebar">Sidebar</aside>
+            <main class="main">Main</main>
+        </div>
+        <div class="right-container">
+            <div class="ads">Ads</div>
+            <footer class="footer">Footer</footer>
+        </div>
+    </div>
+
+</body>
+</html>

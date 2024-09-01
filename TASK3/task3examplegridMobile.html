@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        body{
+            display: grid;
+            background-color: aliceblue;
+            margin: 0;
+            height: 100vh;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-rows:repeat(auto auto 1fr auto auto auto);
+            width: 250px;
+        }
+
+        .header,
+        .navigation,
+        .main,
+        .sidebar,
+        .ads,
+        .footer{
+            border: 2px solid chocolate;
+            border-radius: 3px;
+            padding: 20px
+        }
+
+        .header{
+            grid-row: 1;
+            height: 40px;
+        }
+        .navigation{
+            grid-row: 2;
+            height: 40px;
+        }
+        .main{
+            grid-row: 3;
+            height: 100px;
+        }
+        .sidebar{
+            grid-row: 4;
+            height: 40px;
+        }
+        .ads{
+            grid-row: 5;
+            height: 40px;
+        }
+        .footer{
+            grid-row: 6;
+            height: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+
+        <header class="header">Header</header>
+        <nav class="navigation">Navigation</nav>
+        <main class="main">Main</main>
+        <aside class="sidebar">Sidebar</aside>
+        <div class="ads">Ads</div>
+        <footer class="footer">Footer</footer>
+
+    </div>
+</body>
+</html>

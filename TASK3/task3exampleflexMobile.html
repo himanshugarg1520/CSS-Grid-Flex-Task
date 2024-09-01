@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        body{
+            display: flex;
+            background-color: aliceblue;
+            margin: 0;
+            height: 100vh;
+        }
+
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 300px;
+            margin: 0;
+        }
+        
+        .header,
+        .navigation,
+        .main,
+        .sidebar,
+        .ads,
+        .footer{
+            border: 2px solid chocolate;
+            border-radius: 3px;
+            justify-content: left;
+            justify-content: space-between;
+            margin: 5px;
+        }
+
+        .header{
+            flex: 0 0 40px;
+        }
+        .navigation{
+            flex: 0 0 40px;
+        }
+        .main{
+            flex: 1;
+        }
+        .sidebar{
+            flex: 0 0 40px;
+        }
+        .ads{
+            flex: 0 0 40px;
+        }
+        .footer{
+            flex: 0 0 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+
+        <header class="header">Header</header>
+        <nav class="navigation">navigation</nav>
+        <main class="main">Main</main>
+        <aside class="sidebar">Sidebar</aside>
+        <div class="ads">Ads</div>
+        <footer class="footer">Footer</footer>
+
+    </div>
+
+</body>
+</html>

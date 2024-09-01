@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: aliceblue;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 400px;
+        gap: 10px;
+        height: 520px;
+        position: relative;
+    }
+
+
+    .item{
+        border: 2px solid chocolate;
+        border-radius: 3px;
+        width: 200px;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .item1{
+        order: 1;
+    }
+    .item2{
+        order: 2;
+    }
+    .item3{
+        order: 3;
+    }
+    .item4{
+        order: 4;
+    }
+
+    .flex-container>.item:nth-child(1){
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .flex-container>.item:nth-child(2){
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .flex-container>.item:nth-child(3){
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .flex-container>.item:nth-child(4){
+        margin-bottom: 10px;
+    }
+
+</style>
+<body>
+
+     <div class="flex-container">
+        <div class="item item1">
+            4
+        </div>
+        <div class="item item2">
+            3
+        </div>
+        <div class="item item3">
+            2
+        </div>
+        <div class="item item4">
+            1
+        </div>
+    </div> 
+
+</body>
+
+</html>

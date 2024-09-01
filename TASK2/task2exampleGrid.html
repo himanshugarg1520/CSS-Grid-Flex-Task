@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        body {
+            display: grid;
+            justify-content: center;
+            background-color: aliceblue;
+            margin: 0;
+            height: 100vh;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            width: 70%;
+            max-width: 800px;
+            padding: 20px;
+            gap: 12px; 
+            border-radius: 10px;
+            background-color: white;
+            justify-content: center;
+        }
+
+        .griditem1,
+        .griditem2 {
+            position: relative;
+            border: 2px solid chocolate;
+            border-radius: 6px;
+            padding: 80px;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 2px 2px 5px brown;
+            background-color: white;
+        }
+
+        .griditem1 {
+            grid-column: 2 / span 4; 
+            height: 50px;
+        }
+
+        .griditem2 {
+            grid-column: 6 / span 4; 
+            width: 140px; 
+            height: 50px;
+        }
+
+        .text {
+            position: absolute;
+            font-size: 16px;
+            color: chocolate;
+            top:10px;
+            left: 23px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="griditem1">
+            <div class="text">1</div>
+        </div>
+        <div class="griditem2">
+            <div class="text">2</div>
+        </div>          
+    </div>
+</body>
+</html>

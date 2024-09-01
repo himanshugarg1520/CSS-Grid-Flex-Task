@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+</head>
+<style>
+    body{
+        display: grid;
+        margin: 0;
+        background-color: aliceblue;
+        height: 100vh;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(12,1fr);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4{
+        border: 2px solid chocolate;
+        border-radius: 3px;
+        width: 200px;
+        height: 130px;
+    }
+
+
+    .item1{
+        grid-row: 1/span 3;
+        grid-column: 1/span 3;
+    }
+    .item2{
+        grid-row: 4/span 3;
+        grid-column: 4/span 3;
+    }
+    .item3{
+        grid-row: 7/span 3;
+        grid-column: 7/span 3;
+    }
+    .item4{
+        grid-row: 10/span 3;
+        grid-column: 10/span 3;
+    }
+
+</style>
+
+<body>
+    <div class="grid-container">
+        
+        <div class="item1">
+            4
+        </div>
+        <div class="item2">
+            3
+        </div>
+        <div class="item3">
+            2
+        </div>
+        <div class="item4">
+            1
+        </div>
+
+    </div>
+</body>
+</html>
